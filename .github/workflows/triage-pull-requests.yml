@@ -5,9 +5,10 @@ on:
       - reopened
       - opened
 
+
 jobs:
   triage_pulls:
-    if: github.repository == 'github/docs'
+    if: github.repository != 'github/docs-internal'
     runs-on: ubuntu-latest
 
     steps:
